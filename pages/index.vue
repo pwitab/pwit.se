@@ -41,6 +41,14 @@
         </div>
       </div>
     </div>
+    <div id="customer-projects" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-8 my-4 lg:my-8">
+      <div class="text-center my-4">
+        <h3 class="text-2xl leading-7 font-semibold">
+          Customer Projects
+        </h3>
+      </div>
+        <project-tiles :projects=projects></project-tiles>
+    </div>
     <div id="side-projects" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-8 my-4 lg:my-8">
       <div class="text-center my-4">
         <h3 class="text-2xl leading-7 font-semibold">
@@ -81,8 +89,15 @@
 <script lang="ts">
 import Vue from 'vue'
 import SideProjectCard from "~/components/SideProjectCard.vue";
+import ProjectTiles from "~/components/ProjectTiles.vue";
 
 export default Vue.extend({
-  components: {SideProjectCard}
-})
+    components: {ProjectTiles, SideProjectCard},
+    async asyncData({$content, params}) {
+      const projects = await $content('consultant-projects', params.slug).sortBy("year", 'desc').fetch()
+
+      return {projects}
+    }
+  }
+)
 </script>

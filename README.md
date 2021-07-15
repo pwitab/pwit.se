@@ -1,4 +1,10 @@
-# pwit_se
+# pwit.se
+
+## About
+After spending too much money running an EC2 instance to host our site using docker and paying for RDS storage we 
+realized that it was better to just create a static site and host it on Github.
+
+Built with nuxt.js we are going to see if this setup can fit our need.
 
 ## Build Setup
 
