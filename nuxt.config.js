@@ -4,7 +4,7 @@ export default {
 
   router: {
     base: '/pwit.se/'
-  }
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
