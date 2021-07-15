@@ -50,7 +50,7 @@
 
       <div class="flex flex-col sm:flex-row justify-evenly">
 
-        <SideProjectCard logo_path="/utilitarian_logo_on_light.svg"><p>
+        <SideProjectCard logo-path="/utilitarian_logo_on_light.svg"><p>
           We offer our smart metering related services and products under the name Utilitarian.
         </p>
           <p>With several years of experience in Smart Metering we built a multi-utility AMR system as we wanted it to
@@ -59,7 +59,7 @@
             Metering
             sector.</p>
         </SideProjectCard>
-        <SideProjectCard logo_path="/holundergarden_logo_black.svg">
+        <SideProjectCard logo-path="/holundergarden_logo_black.svg">
           <p>
             Sitting in front of a computer all day, every day is not healthy. We also run a small scale farm producing
             chemical free veggies, honey and eggs. This gives us some time to reflect on coding problems and the
